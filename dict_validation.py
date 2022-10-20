@@ -3,7 +3,7 @@ def create_people_by_age():
 
 
 def add_to_dict(peoples_by_age, name, age):
-    peoples_by_age.update({name: age})
+    peoples_by_age.update({name: age})  # Autre possibilité ==> peoples_by_age[name] = age
 
 
 def dict_contains(peoples_by_age, name):
