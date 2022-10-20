@@ -8,8 +8,7 @@ def add_to_list(list_task, task):
 
 
 def size_of_list(list_task):
-    if list_task:
-        len(list_task)
+    return len(list_task)
 
 
 def list_contains(list_task, task):
