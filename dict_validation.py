@@ -16,7 +16,10 @@ def age_of_people(peoples_by_age, name):
 
 
 def list_people(peoples_by_age):
-    pass
+    list_of_name = []
+    for name in peoples_by_age:
+        list_of_name.append(name)
+    return list_of_name
 
 
 def list_age(peoples_by_age):
