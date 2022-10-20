@@ -7,7 +7,8 @@ def add_to_dict(peoples_by_age, name, age):
 
 
 def dict_contains(peoples_by_age, name):
-    pass
+    if name in peoples_by_age:
+        return True
 
 
 def age_of_people(peoples_by_age, name):
