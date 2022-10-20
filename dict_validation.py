@@ -1,5 +1,5 @@
 def create_people_by_age():
-    pass
+    return {}
 
 
 def add_to_dict(peoples_by_age, name, age):
