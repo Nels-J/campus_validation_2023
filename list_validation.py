@@ -3,6 +3,9 @@ def create_task_list():
     return list_task
 
 
+# def create_task_list():   ( --version plus simple le tableau n'étant pas exploité dans cette fonction --)
+#     return []
+
 def add_to_list(list_task, task):
     list_task.append(task)
 
@@ -12,7 +15,7 @@ def size_of_list(list_task):
 
 
 def list_contains(list_task, task):
-    pass
+    return task in list_task
 
 
 def upper_task_in_tasklist(list_task):
