@@ -16,7 +16,10 @@ def list_contains(list_task, task):
 
 
 def upper_task_in_tasklist(list_task):
-    pass
+    new_list_task = []
+    for task in list_task:
+        new_list_task.append(task.upper())
+    return new_list_task
 
 
 def main():
