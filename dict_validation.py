@@ -16,17 +16,11 @@ def age_of_people(peoples_by_age, name):
 
 
 def list_people(peoples_by_age):
-    list_of_name = []
-    for name in peoples_by_age:
-        list_of_name.append(name)
-    return list_of_name
+    return list(peoples_by_age.keys())
 
 
 def list_age(peoples_by_age):
-    list_of_age = []
-    for name, age in peoples_by_age.items():
-        list_of_age.append(age)
-    return list_of_age
+    return list(peoples_by_age.values())
 
 
 def size_of_dict(peoples_by_age):
