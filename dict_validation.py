@@ -23,7 +23,7 @@ def list_age(peoples_by_age):
 
 
 def size_of_dict(peoples_by_age):
-    pass  # return len(peoples_by_age)
+    return len(peoples_by_age)
 
 
 def main():
