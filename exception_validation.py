@@ -34,8 +34,8 @@ def catch_your_own_exception():
 def main():
     try:
         start_exercice()
-    except Exception:
-        print("Error: Exception catched")
+    except Exception as e:
+        print(f"Error: Cette exception ne doit pas être capturée ici : {e}")
 
 
 if __name__ == "__main__":
