@@ -1,5 +1,6 @@
 def create_task_list():
-    pass
+    list_task = []
+    return list_task
 
 
 def add_to_list(list_task, task):
@@ -46,17 +47,6 @@ def main():
 
     if size_of_list(task_list_upper) != 2:
         print("Error: list size is not 2")
-
-
-
-
-
-
-
-
-
-
-
 
 
 if __name__ == "__main__":
