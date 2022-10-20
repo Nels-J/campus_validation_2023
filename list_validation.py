@@ -1,10 +1,6 @@
 def create_task_list():
-    list_task = []
-    return list_task
+    return []
 
-
-# def create_task_list():   ( --version plus simple le tableau n'étant pas exploité dans cette fonction --)
-#     return []
 
 def add_to_list(list_task, task):
     list_task.append(task)
