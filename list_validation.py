@@ -4,7 +4,8 @@ def create_task_list():
 
 
 def add_to_list(list_task, task):
-    pass
+    list_task.append(task)
+    return list_task
 
 
 def size_of_list(list_task):
