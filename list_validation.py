@@ -5,11 +5,11 @@ def create_task_list():
 
 def add_to_list(list_task, task):
     list_task.append(task)
-    return list_task
 
 
 def size_of_list(list_task):
-    pass
+    if list_task:
+        len(list_task)
 
 
 def list_contains(list_task, task):
