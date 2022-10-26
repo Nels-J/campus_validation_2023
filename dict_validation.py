@@ -19,7 +19,10 @@ def age_of_people(peoples_by_age, name):
 
 
 def list_people(peoples_by_age):
-    return peoples_by_age.keys()
+    list_of_people = []
+    for key in peoples_by_age:
+        list_of_people.append(key)
+    return list_of_people
 
 
 def list_age(peoples_by_age):
