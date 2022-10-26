@@ -3,7 +3,11 @@ def create_people_by_age():
 
 
 def add_to_dict(peoples_by_age, name, age):
-    pass
+    # Step by Step
+    # new_key_value = {name: age}
+    # peoples_by_age.update(new_key_value)
+    # Shorter
+    peoples_by_age.update({name: age})
 
 
 def dict_contains(peoples_by_age, name):
@@ -54,6 +58,7 @@ def main():
 
     if list_age(peoples_by_age) != [25, 54]:
         print("Error: list of age is not correct")
+
 
 if __name__ == "__main__":
     main()
