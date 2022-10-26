@@ -1,5 +1,5 @@
 def create_task_list():
-    pass
+    return []
 
 
 def add_to_list(list_task, task):
