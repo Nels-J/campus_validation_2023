@@ -26,7 +26,10 @@ def list_people(peoples_by_age):
 
 
 def list_age(peoples_by_age):
-    pass
+    list_of_age = []
+    for people in peoples_by_age:
+        list_of_age.append(peoples_by_age.get(people))
+    return list_of_age
 
 
 def size_of_dict(peoples_by_age):
