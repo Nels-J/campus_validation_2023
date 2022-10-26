@@ -15,7 +15,8 @@ def dict_contains(peoples_by_age, name):
 
 
 def age_of_people(peoples_by_age, name):
-    pass
+    return peoples_by_age.get(name)
+
 
 
 def list_people(peoples_by_age):
