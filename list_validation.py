@@ -11,7 +11,7 @@ def size_of_list(list_task):
 
 
 def list_contains(list_task, task):
-    pass
+    return task in list_task
 
 
 def upper_task_in_tasklist(list_task):
