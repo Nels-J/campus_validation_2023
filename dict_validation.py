@@ -11,7 +11,7 @@ def add_to_dict(peoples_by_age, name, age):
 
 
 def dict_contains(peoples_by_age, name):
-    pass
+    return name in peoples_by_age
 
 
 def age_of_people(peoples_by_age, name):
