@@ -6,7 +6,7 @@ def add_to_dict(peoples_by_age, name, age):
     # Step by Step
     # new_key_value = {name: age}
     # peoples_by_age.update(new_key_value)
-    # Shorter
+    # Shorter inlined
     peoples_by_age.update({name: age})
 
 
@@ -18,9 +18,8 @@ def age_of_people(peoples_by_age, name):
     return peoples_by_age.get(name)
 
 
-
 def list_people(peoples_by_age):
-    pass
+    return peoples_by_age.keys()
 
 
 def list_age(peoples_by_age):
