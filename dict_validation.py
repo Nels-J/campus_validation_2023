@@ -15,21 +15,24 @@ def dict_contains(peoples_by_age, name):
 
 
 def age_of_people(peoples_by_age, name):
-    return peoples_by_age.get(name)
+    # return peoples_by_age.get(name)
+    return peoples_by_age[name]
 
 
 def list_people(peoples_by_age):
-    list_of_people = []
-    for key in peoples_by_age:
-        list_of_people.append(key)
-    return list_of_people
+    # list_of_people = []
+    # for key in peoples_by_age:
+    #     list_of_people.append(key)
+    # return list_of_people
+    return list(peoples_by_age.keys())
 
 
 def list_age(peoples_by_age):
-    list_of_age = []
-    for people in peoples_by_age:
-        list_of_age.append(peoples_by_age.get(people))
-    return list_of_age
+    # list_of_age = []
+    # for people in peoples_by_age:
+    #     list_of_age.append(peoples_by_age.get(people))
+    # return list_of_age
+    return list(peoples_by_age.values())
 
 
 def size_of_dict(peoples_by_age):
