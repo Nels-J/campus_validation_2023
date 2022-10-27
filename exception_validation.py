@@ -5,12 +5,19 @@ def start_exercice():
 
 
 def catch_division_by_zero():
-    return 5 / 0
+    try:
+        x = int(5)
+        y = int(0)
+        result = x / y
+        return result
+    except ZeroDivisionError:
+        print("La division par zéro n'est pas autorisée")
+    finally:
+        print("Fin de catch_division_by_zero")
+
 
 def catch_int_conversion_error():
     return int("a")
-
-
 
 
 class MyAwesomeException:
