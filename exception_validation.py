@@ -12,8 +12,6 @@ def catch_division_by_zero():
         return result
     except ZeroDivisionError:
         print("La division par zéro n'est pas autorisée")
-    finally:
-        print("Fin de la fx. catch_division_by_zero")
 
 
 def catch_int_conversion_error():
@@ -21,17 +19,17 @@ def catch_int_conversion_error():
         conversion = int("a")
         return conversion
     except ValueError:
-        print("La valeur saisie est érronée")
-    finally:
-        print("Fin de la fx. catch_int_conversion_error()")
+        print("La valeur saisie est incorrecte")
 
 
-class MyAwesomeException():
-    pass
+class MyAwesomeException(Exception):
+    def __init__(self, arg):
+        self.args = arg
+        print(arg)
 
 
 def raise_my_own_exception():
-    pass
+    raise MyAwesomeException('Si ce message s\'affiche alors, c\'est gagné')
 
 
 def catch_your_own_exception():
