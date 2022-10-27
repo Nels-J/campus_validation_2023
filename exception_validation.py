@@ -13,14 +13,20 @@ def catch_division_by_zero():
     except ZeroDivisionError:
         print("La division par zéro n'est pas autorisée")
     finally:
-        print("Fin de catch_division_by_zero")
+        print("Fin de la fx. catch_division_by_zero")
 
 
 def catch_int_conversion_error():
-    return int("a")
+    try:
+        conversion = int("a")
+        return conversion
+    except ValueError:
+        print("La valeur saisie est érronée")
+    finally:
+        print("Fin de la fx. catch_int_conversion_error()")
 
 
-class MyAwesomeException:
+class MyAwesomeException():
     pass
 
 
