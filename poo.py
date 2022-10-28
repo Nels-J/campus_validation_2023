@@ -1,32 +1,70 @@
-"""
-Créer un programme qui manipule une classe ListCalculate qui reçoit une liste d'entiers dans le constructeur.
+class ToDolist():
+    def __init__(self):
+        self.list = list()
+    def append(self, task):
+        self.list.append(task)
 
-Créer les classes qui héritent de ListCalculate et qui définissent la méthode calculer
-- ListCalculateSum
-- ListCalculateProduct
+    def __iter__(self):
+        return iter(self.list)
 
-Créer une liste contenant des ListCalculateSum et des ListCalculateProduct
-et afficher le résultat de chacune des listes
- """
+    def __len__(self):
+        return len(self.list)
 
-
-class ListCalculate():
-    def __init__(self, arg):
-        self.args = arg
-        print(arg)
-
-
-class ListCalculateSum(ListCalculate):
-    pass
+    def upper_task_in_tasklist(self):
+        new_list = ToDolist()
+        for task in self:
+            new_list.append(task.upper())
+        return new_list
 
 
-class ListCalculateProduct(ListCalculate):
-    pass
+def create_task_list():
+    return ToDolist()
+
+
+def add_to_list(list_task, task):
+    list_task.append(task)
+
+
+def size_of_list(list_task):
+    return len(list_task)
+
+
+def list_contains(list_task, task):
+    return task in list_task
+
+
+def upper_task_in_tasklist(list_task):
+    return list_task.upper_task_in_tasklist()
 
 
 def main():
-    nbr = [1, 2, 3, 6]
-    ListCalculate(nbr)
+    list_task = create_task_list()
+
+    if not isinstance(list_task, ToDolist):
+        print("Error: list_task is not a list")
+
+    add_to_list(list_task, "task1")
+    add_to_list(list_task, "task2")
+
+    if size_of_list(list_task) != 2:
+        print("Error: list size is not 2")
+
+    if not list_contains(list_task, "task1"):
+        print("Error: list does not contain task1")
+
+    if not list_contains(list_task, "task2"):
+        print("Error: list does not contain task2")
+
+    task_list_upper = upper_task_in_tasklist(list_task)
+
+    if not list_contains(task_list_upper, "TASK1"):
+        print("Error: list does not contain TASK1")
+
+    if not list_contains(task_list_upper, "TASK2"):
+        print("Error: list does not contain TASK2")
+
+    if size_of_list(task_list_upper) != 2:
+        print("Error: list size is not 2")
 
 
 if __name__ == "__main__":
